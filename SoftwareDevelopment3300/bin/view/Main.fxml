@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="750.0" prefWidth="954.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Label fx:id="m_welcome" layoutX="435.0" layoutY="70.0" text="Welcome" />
+      <Button fx:id="Main_logout_Button" layoutX="855.0" layoutY="688.0" mnemonicParsing="false" onAction="#ClickLogOut" prefHeight="37.0" prefWidth="76.0" text="Logout" />
+      <Button fx:id="Main_Account_Button" layoutX="764.0" layoutY="689.0" mnemonicParsing="false" onAction="#ClickAccountUpdate" prefHeight="36.0" prefWidth="76.0" text="Account" />
+      <Button fx:id="main_Overview" layoutX="145.0" layoutY="446.0" mnemonicParsing="false" onAction="#ClickMO" text="Overview" />
+      <Button fx:id="main_State" layoutX="459.0" layoutY="446.0" mnemonicParsing="false" onAction="#ClickMS" text="Income" />
+      <Button fx:id="main_federal" layoutX="709.0" layoutY="446.0" mnemonicParsing="false" onAction="#ClickMF" text="Student/Morgage" />
+      <ProgressBar fx:id="main_progress" layoutX="619.0" layoutY="70.0" prefHeight="18.0" prefWidth="314.0" progress="0.0" />
+      <Button fx:id="main_result" layoutX="437.0" layoutY="605.0" mnemonicParsing="false" onAction="#ClickMresult" text="Review/Results" textFill="#e40808" />
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="85.0" layoutY="226.0">
+         <image>
+            <Image url="@../../../../Downloads/features-overview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="187.0" fitWidth="200.0" layoutX="377.0" layoutY="239.0">
+         <image>
+            <Image url="@../../../../Downloads/income-report.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="149.0" fitWidth="199.0" layoutX="665.0" layoutY="277.0">
+         <image>
+            <Image url="@../../../../Downloads/house10.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

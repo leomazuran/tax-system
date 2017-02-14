@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="391.0" prefWidth="389.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Label layoutX="70.0" layoutY="128.0" text="Code: " />
+      <Label layoutX="69.0" layoutY="76.0" text="Email: " />
+      <Label layoutX="27.0" layoutY="177.0" text="New Password: " />
+      <Label layoutX="14.0" layoutY="224.0" text="Repeat Password: " />
+      <TextField fx:id="fn_email" layoutX="120.0" layoutY="72.0" promptText="jdoe@gmail.com" />
+      <TextField fx:id="fn_code" layoutX="120.0" layoutY="124.0" promptText="Enter Code" />
+      <Button fx:id="fn_resetB" layoutX="160.0" layoutY="284.0" mnemonicParsing="false" onAction="#ClickFnButton" text="Reset" />
+      <Label fx:id="fn_status" layoutX="14.0" layoutY="259.0" />
+      <Button fx:id="Fn_Goback" layoutX="143.0" layoutY="321.0" mnemonicParsing="false" onAction="#ClickCAGoBack" text="Go to Login" />
+      <PasswordField fx:id="fn_password" layoutX="120.0" layoutY="173.0" promptText="Enter new password" />
+      <PasswordField fx:id="fn_rpassword" layoutX="120.0" layoutY="220.0" promptText="ReEnter Password" />
+   </children>
+</AnchorPane>

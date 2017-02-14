@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="308.0" prefWidth="340.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.MainController">
+   <children>
+      <Label layoutX="75.0" layoutY="14.0" prefHeight="62.0" prefWidth="190.0" text="Warning!" textFill="#f50000">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="3.0" layoutY="76.0" prefHeight="34.0" prefWidth="329.0" text="Are you sure you want to delete this account?" textFill="#fa9307">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="110.0" text="If Yes, Enter Password" />
+      <PasswordField fx:id="D_password" layoutX="92.0" layoutY="135.0" promptText="password" />
+      <Button fx:id="D_button" layoutX="118.0" layoutY="160.0" mnemonicParsing="false" onAction="#ClickDB" text="Delete Account" textFill="#f20b0b" />
+      <Button fx:id="D_GB" layoutX="141.0" layoutY="193.0" mnemonicParsing="false" onAction="#ClickDGB" text="Go Back" />
+      <Label fx:id="D_status" layoutX="46.0" layoutY="241.0" prefHeight="46.0" prefWidth="241.0" textFill="#f80101">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="517.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Label layoutX="135.0" layoutY="14.0" text="Update Account" textFill="#ff0505">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="UA_UUB" layoutX="243.0" layoutY="118.0" mnemonicParsing="false" onAction="#ClickUUB" text="Update Username" />
+      <Button fx:id="UA_UE" layoutX="243.0" layoutY="156.0" mnemonicParsing="false" onAction="#ClickUAUE" text="Update Email" />
+      <Button fx:id="UA_UPB" layoutX="259.0" layoutY="236.0" mnemonicParsing="false" onAction="#ClickUAUP" text="Update Password" />
+      <Button fx:id="UA_DAB" layoutX="135.0" layoutY="400.0" mnemonicParsing="false" onAction="#ClickUADA" text="Delete Account" textFill="#f80707" />
+      <TextField fx:id="UA_username" layoutX="94.0" layoutY="118.0" />
+      <Label layoutX="29.0" layoutY="122.0" text="Username:" />
+      <Label layoutX="54.0" layoutY="160.0" text="Email:" />
+      <TextField fx:id="UA_email" layoutX="94.0" layoutY="156.0" />
+      <PasswordField fx:id="UA_password" layoutX="94.0" layoutY="212.0" />
+      <PasswordField fx:id="UA_rpassword" layoutX="110.0" layoutY="236.0" />
+      <Label layoutX="32.0" layoutY="216.0" text="Password:" />
+      <Label layoutX="9.0" layoutY="240.0" text="Repeat Password:" />
+      <Label fx:id="UA_status" layoutX="40.0" layoutY="273.0" />
+   </children>
+</AnchorPane>

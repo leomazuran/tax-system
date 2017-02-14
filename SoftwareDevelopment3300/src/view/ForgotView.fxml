@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="395.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Label layoutX="110.0" layoutY="30.0" text="Account Recovery" textFill="#f20606">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="77.0" text="Enter Email Address Used to create your account below">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="forgot_email" layoutX="96.0" layoutY="173.0" prefHeight="25.0" prefWidth="211.0" promptText="jdoe@example.com" />
+      <Button fx:id="Forgot_Submit" layoutX="110.0" layoutY="198.0" mnemonicParsing="false" onAction="#ClickForgotSubmit" text="Submit" />
+      <Label fx:id="forgot_status" layoutX="12.0" layoutY="236.0" prefHeight="17.0" prefWidth="400.0" />
+      <Button fx:id="forgot_goback_Button" layoutX="176.0" layoutY="198.0" mnemonicParsing="false" onAction="#ClickCAGoBack" text="Go Back" />
+      <Label fx:id="forgot_status1" layoutX="306.0" layoutY="177.0" prefHeight="17.0" prefWidth="65.0" />
+      <Button fx:id="forgot_next" layoutX="107.0" layoutY="253.0" mnemonicParsing="false" onAction="#ClickForgotCode" prefHeight="25.0" prefWidth="190.0" text="Already have code!" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="750.0" prefWidth="954.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Label layoutX="453.0" layoutY="62.0" text="Overview" />
+      <Label fx:id="ol_1" layoutX="192.0" layoutY="130.0" text="How many houses do you own?">
+         <tooltip>
+            <Tooltip text="It is best to give any homes that you own inclusing summer houses or houses that you are renting to," wrapText="true" />
+         </tooltip></Label>
+      <Label fx:id="ol_2" layoutX="171.0" layoutY="237.0" text="Do you have any Kids (less than 18)? If yes how many">
+         <tooltip>
+            <Tooltip text="Include childeren that you legally take off. Foster kids are also included." />
+         </tooltip></Label>
+      <Label fx:id="ol_3" layoutX="192.0" layoutY="350.0" text="How old are you?">
+         <tooltip>
+            <Tooltip text="Enter just year current age e.q(20)" />
+         </tooltip></Label>
+      <Label fx:id="ol_4" layoutX="192.0" layoutY="464.0" text="How many Cars do you own?">
+         <tooltip>
+            <Tooltip text="Include cars that you own and/or lease." />
+         </tooltip></Label>
+      <TextField fx:id="O_1" layoutX="192.0" layoutY="162.0" prefHeight="25.0" prefWidth="34.0" />
+      <TextField fx:id="O_2" layoutX="192.0" layoutY="288.0" prefHeight="25.0" prefWidth="34.0" />
+      <TextField fx:id="O_4" layoutX="192.0" layoutY="515.0" prefHeight="25.0" prefWidth="34.0" />
+      <TextField fx:id="O_5" layoutX="562.0" layoutY="187.0" prefHeight="25.0" prefWidth="206.0" />
+      <TextField fx:id="O_7" layoutX="548.0" layoutY="405.0" prefHeight="25.0" prefWidth="113.0" />
+      <TextField fx:id="O_6" layoutX="570.0" layoutY="288.0" prefHeight="25.0" prefWidth="34.0" />
+      <Label fx:id="ol_6" layoutX="556.0" layoutY="139.0" text="How much money have you donate to charity?">
+         <tooltip>
+            <Tooltip text="Enter the total amount you gave to charity this year." />
+         </tooltip></Label>
+      <Label fx:id="ol_7" layoutX="559.0" layoutY="245.0" text="What state are you from?">
+         <tooltip>
+            <Tooltip text="Enter your two chcaracter state code e.g.(Georgia = GA)" />
+         </tooltip></Label>
+      <Label fx:id="ol_8" layoutX="548.0" layoutY="350.0" text="What is your Zipcode?">
+         <tooltip>
+            <Tooltip text="Enter your current 5 digit zipcode. If you live in Northern states you can have a higher tax refund." />
+         </tooltip></Label>
+      <Button fx:id="O_SE" layoutX="712.0" layoutY="682.0" mnemonicParsing="false" onAction="#ClickOSE" text="Save and Exit" />
+      <Button fx:id="O_SC" layoutX="816.0" layoutY="682.0" mnemonicParsing="false" onAction="#ClickOSC" text="Save and Continue" />
+      <Button fx:id="test" layoutX="587.0" layoutY="682.0" mnemonicParsing="false" onAction="#Clicktest" text="previous response" />
+      <TextField fx:id="O_3" layoutX="192.0" layoutY="405.0" prefHeight="25.0" prefWidth="34.0" />
+      <Label layoutX="133.0" layoutY="648.0" text="*Hover over Question for more information" textFill="#0fd719" />
+   </children>
+</AnchorPane>

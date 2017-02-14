@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="750.0" prefWidth="954.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Label layoutX="463.0" layoutY="60.0" text="Stage 3" />
+      <Label fx:id="fl_1" layoutX="134.0" layoutY="140.0" text="Are you a student?">
+         <tooltip>
+            <Tooltip text="If you are not a student you can skip this question." />
+         </tooltip></Label>
+      <TextField fx:id="f_1" layoutX="134.0" layoutY="174.0" prefHeight="25.0" prefWidth="182.0" />
+      <Label fx:id="fl_2" layoutX="134.0" layoutY="279.0" text="Input scholarships or grants:">
+         <tooltip>
+            <Tooltip text="This information can be found in your 1098-t form section 5." />
+         </tooltip></Label>
+      <Label fx:id="fl_3" layoutX="134.0" layoutY="393.0" text="Input miscellaneous expense.(Books,material,.etc)">
+         <tooltip>
+            <Tooltip text="To get the best posible refund, calculate all the expenses that you are using throug out the year. (Summer, Fall, Spring)" />
+         </tooltip></Label>
+      <Label fx:id="fl_4" layoutX="519.0" layoutY="157.0" text="If yes, Input Mortgage interest:">
+         <tooltip>
+            <Tooltip text="You can find this information in your 1098 form section 1" />
+         </tooltip></Label>
+      <Label fx:id="fl_5" layoutX="519.0" layoutY="279.0" text="Real estate tax:">
+         <tooltip>
+            <Tooltip text="This information can be found in your 1098 form section 4" />
+         </tooltip></Label>
+      <TextField fx:id="f_2" layoutX="134.0" layoutY="310.0" prefHeight="25.0" prefWidth="182.0" />
+      <TextField fx:id="f_3" layoutX="134.0" layoutY="427.0" prefHeight="25.0" prefWidth="182.0" />
+      <TextField fx:id="f_4" layoutX="519.0" layoutY="174.0" prefHeight="25.0" prefWidth="182.0" />
+      <TextField fx:id="f_5" layoutX="519.0" layoutY="310.0" prefHeight="25.0" prefWidth="182.0" />
+      <Button fx:id="f_SE" layoutX="739.0" layoutY="689.0" mnemonicParsing="false" onAction="#ClickFSE" text="Save and Exit" />
+      <Button fx:id="f_SC" layoutX="837.0" layoutY="689.0" mnemonicParsing="false" onAction="#ClickFSC" text="Save and Continue" />
+      <Label layoutX="134.0" layoutY="157.0" text="If yes, what is your total Tuition this year?">
+         <tooltip>
+            <Tooltip text="This can be found through your 1098-t form from the school you attend." />
+         </tooltip>
+      </Label>
+      <Label layoutX="503.0" layoutY="115.0" text="Morgage Information:" textFill="#058d14" />
+      <Label layoutX="120.0" layoutY="115.0" text="Student tuition information:" textFill="#122fd3" />
+      <Label layoutX="519.0" layoutY="140.0" text="Do you have a Morgage?" />
+      <Button fx:id="f_test" layoutX="620.0" layoutY="689.0" mnemonicParsing="false" onAction="#Clicktest3" text="Previous response" />
+      <Label layoutX="120.0" layoutY="174.0" text="\$" />
+      <Label layoutX="120.0" layoutY="314.0" text="\$" />
+      <Label layoutX="120.0" layoutY="431.0" text="\$" />
+      <Label layoutX="503.0" layoutY="178.0" text="\$" />
+      <Label layoutX="503.0" layoutY="314.0" text="\$" />
+      <ImageView fitHeight="165.0" fitWidth="414.0" layoutX="49.0" layoutY="494.0">
+         <image>
+            <Image url="@../../../../Downloads/form%201098T.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="73.0" layoutY="468.0" text="You may need your 1098-T Form" />
+      <ImageView fitHeight="173.0" fitWidth="388.0" layoutX="482.0" layoutY="390.0">
+         <image>
+            <Image url="@../../../../Downloads/1098.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="489.0" layoutY="358.0" text="You may need your 1098 Form" />
+      <Label layoutX="92.0" layoutY="681.0" text="*Hover over Question for more information" textFill="#2ccd1b" />
+   </children>
+</AnchorPane>

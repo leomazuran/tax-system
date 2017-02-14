@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="750.0" prefWidth="954.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Label layoutX="453.0" layoutY="62.0" text="Income" />
+      <Label fx:id="sl_1" layoutX="102.0" layoutY="154.0" text="Income Total for this year:">
+         <tooltip>
+            <Tooltip text="You can find this on your w2 from section 1. (Wages, tips, other compensation)" />
+         </tooltip></Label>
+      <Label fx:id="sl_2" layoutX="102.0" layoutY="261.0" text="Social Security Tax:">
+         <tooltip>
+            <Tooltip text="This can be found in your w2 form section 3." />
+         </tooltip></Label>
+      <Label fx:id="sl_3" layoutX="102.0" layoutY="358.0" text="Medicare tax:">
+         <tooltip>
+            <Tooltip text="This can be found in your w2 form section 6" />
+         </tooltip></Label>
+      <Label fx:id="sl_4" layoutX="490.0" layoutY="154.0" text="Federal income tax:">
+         <tooltip>
+            <Tooltip text="This can be found in your w2 form section 2." />
+         </tooltip></Label>
+      <TextField fx:id="S_1" layoutX="102.0" layoutY="206.0" prefHeight="25.0" prefWidth="236.0" />
+      <TextField fx:id="S_2" layoutX="102.0" layoutY="307.0" prefHeight="25.0" prefWidth="236.0" />
+      <TextField fx:id="S_3" layoutX="102.0" layoutY="399.0" prefHeight="25.0" prefWidth="236.0" />
+      <TextField fx:id="S_4" layoutX="490.0" layoutY="206.0" prefHeight="25.0" prefWidth="236.0" />
+      <Button fx:id="S_SE" layoutX="712.0" layoutY="682.0" mnemonicParsing="false" onAction="#ClickSSE" text="Save and exit" />
+      <Button fx:id="S_SC" layoutX="816.0" layoutY="682.0" mnemonicParsing="false" onAction="#ClickSSC" text="Save and Continue" />
+      <Button fx:id="s_test" layoutX="587.0" layoutY="682.0" mnemonicParsing="false" onAction="#Clicktest2" text="Previous  response" />
+      <Label layoutX="95.0" layoutY="127.0" text="Income Infomration:" textFill="#e10707" />
+      <Label layoutX="110.0" layoutY="674.0" text="*Hover over Question for more information" textFill="#21dd10" />
+      <ImageView fitHeight="208.0" fitWidth="385.0" layoutX="466.0" layoutY="352.0">
+         <image>
+            <Image url="@../../../../Downloads/w2A-7.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="476.0" layoutY="324.0" text="You may need your W-2 Form" textOverrun="WORD_ELLIPSIS" />
+      <Label layoutX="88.0" layoutY="210.0" text="\$" />
+      <Label layoutX="92.0" layoutY="311.0" text="\$" />
+      <Label layoutX="92.0" layoutY="403.0" text="\$" />
+      <Label layoutX="477.0" layoutY="210.0" text="\$" />
+   </children>
+</AnchorPane>
